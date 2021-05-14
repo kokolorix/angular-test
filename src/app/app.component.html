@@ -1,1 +1,29 @@
 <button (click)="clickit()">ClickIt!</button>
+<hr>
+<!-- <div class="v_center">
+    <button class="button_height add_icon" (click)="doAdd()"><img class="icon" src="assets/add.ico" /></button>
+</div> -->
+<!--  -->
+<ul class="thing">
+    <li class="v_center first_row">
+        <!-- <span class="first_badge v_center" style="width: 100%;"> -->
+        <span class="badge " (click)="this.doAdd()">
+                <img class="icon" src="assets/add.ico" />
+            </span>
+        <span class="v_center">
+                <input class="input_height transparent" style="width: 4em;" type="number" [(ngModel)]="this.maxNumber" />
+            </span>
+        <span class="first_row" style="width: 100%;"></span>
+        <!-- </span> -->
+    </li>
+    <li *ngFor="let t of things" class="row v_center " [class.selected]="t===this.selected" (click)="this.doSelect(t)">
+        <!-- <span class="v_center"> -->
+        <span class="badge v_center" (click)="this.doRemove(t)"><img class="icon" src="assets/error.ico" /></span>
+        <!-- <button class="button_height" (click)="this.doRemove(t)" ><img class="icon" src="assets/error.ico" /></button> -->
+        <span class="">{{t.id|number:'3.0-0'}}</span> {{t.name}}
+        <!-- <input class="input_height transparent" type="text" value="{{t.name}}"  [class.selected]="t===this.selected" /> -->
+        <!-- </span> -->
+    </li>
+</ul>
+<hr>
+<app-detail [thing]="selected"></app-detail>

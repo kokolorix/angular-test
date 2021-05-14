@@ -1,0 +1,95 @@
+.button_height {
+    height: 21px;
+}
+
+.input_height {
+    height: 17px;
+}
+
+.v_center {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+}
+
+.add_icon {
+    background-image: "assets/error.ico";
+}
+
+.icon {
+    height: 12px;
+    width: 12px;
+}
+
+.thin {
+    /* color: grey; */
+    border: 1px;
+    border-style: solid;
+    border-color: grey;
+    margin-left: 1px;
+    margin-right: 1px;
+    padding: 1px;
+}
+
+.first_row {
+    background-color: grey;
+}
+
+.first_row:hover {
+    cursor: none;
+    background-color: grey;
+}
+
+.first_badge {
+    background-color: grey;
+}
+
+.first_badge:hover {
+    background-color: grey;
+}
+
+.transparent {
+    background: transparent;
+    border: none;
+}
+
+.selected {
+    background-color: mediumblue !important;
+    color: white !important;
+}
+
+.thing {
+    margin: 0 0 2em 0;
+    list-style: none;
+    padding: 0;
+    width: 20em;
+}
+
+.thing li {
+    position: relative;
+    /* left: 0em; */
+    margin: .4em 0 0 0;
+    background-color: rgb(215, 232, 238);
+    /* padding: 3em 0; */
+    /* height: 1.6em; */
+    border-radius: 4px;
+}
+
+.thing .row:hover {
+    /* color: hotpink; */
+    background-color: cyan;
+    /* left: 1em; */
+}
+
+.thing .badge {
+    cursor: pointer;
+    display: inline-block;
+    font-size: small;
+    /* color: white; */
+    /* background-color: tomato; */
+    padding: .2em .2em 0 .2em;
+    /* margin: .1em; */
+    position: relative;
+    border-radius: 4px 0 0 4px;
+}

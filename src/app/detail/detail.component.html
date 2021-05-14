@@ -1,0 +1,13 @@
+<h4>Details:</h4>
+<div *ngIf="thing" class="thing">
+    <fieldset>
+        <legend>{{thing.name | uppercase}}</legend>
+        <div> <span>id: </span>{{thing.id}}
+            <label>Name: <input [(ngModel)]="thing.name" placeholder="name"/></label>
+        </div>
+        <div *ngFor="let p of thing.properties" class="prop">
+            <label class="p_l">{{p.name}}: </label>
+            <input [(ngModel)]="p.value" />
+        </div>
+    </fieldset>
+</div>
